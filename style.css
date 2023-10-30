@@ -1,0 +1,303 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(56, 131, 35);
+    color: rgb(234, 241, 233);
+}
+
+#header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(5, 75, 17);
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: rgb(17, 75, 6);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: rgb(20, 62, 12);
+    transition: .4s;
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+
+h4 {
+    color: white;
+}
+
+h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+h3 {
+    color: white;
+}
+
+
+/*---profile---*/
+
+#profile {
+    padding: 70px 0;
+    color: rgb(19, 1, 1);
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(9, 20, 14);
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: rgba(11, 167, 60, 0.628);;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+
+/* Gallery */
+
+#gallery {
+    padding: 50px 0;
+    color: rgb(25, 4, 4);
+    text-align: center;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+.judul {
+    color: rgb(28, 11, 11);
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-weight: lighter;
+}
+
+#foto-gal {
+    height: 550px;
+    padding: 50px;
+    border-radius: 100px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+#foto-gal:hover {
+    transform: translateY(-10px);
+}
+
+
+/* -----activities ----*/
+
+#activities {
+    padding: 128px 0;
+    background-image: url(img/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+#activities h1 {
+    text-align: center;
+}
+
+.list-activities {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+#activities .sub-title {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.list-activities div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.list-activities div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.list-activities div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.list-activities div:hover {
+    background: rgb(166, 189, 156);
+    transform: translateY(-10px);
+}
+
+.list-aktifitas div p {
+    font-size: 15px;
+}
+
+
+/* contact */
+
+#contact {
+    background-image: url(img/bg.JPG);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(56, 62, 56);
+    padding: 70px 0;
+}
+
+.contact-left h1 {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.contact-left {
+    flex-basis: 50%;
+}
+
+.contact-right {
+    flex-basis: 50%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: rgb(221, 215, 215);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons h1 {
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.social-icons {
+    margin-left: 100px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #403a3a;
+    display: table;
+    padding: 18px;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: rgba(2, 56, 8, 0.402);
+    transform: translateY(-5px);
+}
+
